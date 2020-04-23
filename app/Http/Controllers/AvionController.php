@@ -116,7 +116,7 @@ class AvionController extends Controller
 
         // Más información sobre respuestas en http://jsonapi.org/format/
         // Devolvemos el código HTTP 201 Created – [Creada] Respuesta a un POST que resulta en una creación. Debería ser combinado con un encabezado Location, apuntando a la ubicación del nuevo recurso.
-        return response()->json(['data'=>$nuevoAvion], 201)->header('Location',  url('/api/v1/').'/aviones/'.$nuevoAvion->id);
+        return response()->json(['data'=>$nuevoAvion], 201)->header('Location',  url('/api/').'/aviones/'.$nuevoAvion->id);
     }
     
  /**

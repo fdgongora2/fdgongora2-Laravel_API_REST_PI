@@ -25,7 +25,7 @@ class FabricanteController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         $consulta = Fabricante::query();
 

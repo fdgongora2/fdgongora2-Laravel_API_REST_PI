@@ -21,8 +21,8 @@
 </IfModule>
 
 <Limit GET POST PUT DELETE OPTIONS>
-Require all granted
+  Require all granted
 </Limit>
 <LimitExcept GET POST PUT DELETE OPTIONS>
-Require all denied
+  Require all denied
 </LimitExcept>

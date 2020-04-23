@@ -26,7 +26,7 @@ Route::resource('fabricantes','FabricanteController',['except'=>['edit','create'
 // Si queremos dar  la funcionalidad de ver todos los aviones tendremos que crear una ruta específica.
 // Pero de aviones solamente necesitamos solamente los métodos index y show.
 // Lo correcto sería hacerlo así:
-Route::resource('aviones','AvionController',[ 'only'=>['index','show'] ]); // El resto se gestionan en FabricanteAvionController
+Route::resource('aviones','AvionController',[ 'except'=>['edit','create'] ]); // El resto se gestionan en FabricanteAvionController
 
 // Como la clase principal es fabricantes y un avión no se puede crear si no le indicamos el fabricante,
 // entonces necesitaremos crear lo que se conoce como  "Recurso Anidado" de fabricantes con aviones.
